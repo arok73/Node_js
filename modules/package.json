@@ -1,0 +1,26 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "Node-tehtäviä",
+  "keywords": [
+    "server"
+  ],
+  "author": "tuito",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "contributors": [],
+  "main": "moda_run.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": "^5.0.0",
+    "chai": "^4.1.2"
+  }
+}
