@@ -1,8 +1,8 @@
-/* const modcobj = require('../modc.js');
+const modcobj = require('../../Teht_1c/c_module');
 const expect = require('chai').expect;
 
 
-describe('Testing modc', () => {
+describe('Testing c_module', () => {
 
     it('should export an object', () => {
         expect(modcobj).to.be.an('Object');
@@ -16,4 +16,3 @@ describe('Testing modc', () => {
         expect(modcobj.calcAverage()).to.equal(3.5);
     });
 });
- */

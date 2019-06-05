@@ -1,4 +1,4 @@
-const moda = require('../../a_module');
+const moda = require('../../Teht_1a/a_module');
 const expect = require('chai').expect;
 
 describe('Testing moda', () => {
