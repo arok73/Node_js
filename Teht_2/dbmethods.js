@@ -1,6 +1,6 @@
 const conn = require('./dbconnection');
 
-const Dbmethods = {
+const dbmethods = {
 
     add: function (student_code, name, email, study_points, callback) {
         return conn.query('insert into Students set student_code = ?, name = ?, email = ?, study_points = ?',
@@ -31,4 +31,4 @@ const Dbmethods = {
         return conn.query('delete from Grades where student_code = ?', [student_code], callback);
     }
 };
-module.exports = Dbmethods;
+module.exports = dbmethods;
