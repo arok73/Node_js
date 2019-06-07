@@ -25,6 +25,10 @@ const Dbmethods = {
 
     updategrade: function (study_points, student_code, callback) {
         return conn.query('update Students set study_points = ? where student_code = ?', [study_points, student_code], callback);
+    },
+
+    deletegrade: function (student_code, callback) {
+        return conn.query('delete from Grades where student_code = ?', [student_code], callback);
     }
 };
 module.exports = Dbmethods;
