@@ -1,11 +1,14 @@
 const dbmethods = require('./dbmethods');
 
+const student_code = 'x1234';
+const student_points = '10';
+
 function handleError(err) {
     console.error(err);
     process.exit(1);
 }
 
-dbmethods.update('3', 't1113', function (err,result) {
+dbmethods.update(student_points, student_code, function (err,result) {
     if (err) {
         return handleError(err);
     }

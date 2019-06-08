@@ -1,17 +1,19 @@
 const dbmethods = require('./dbmethods');
 
+const student_code = 'x1234';
+
 function handleError(err) {
     console.error(err);
     process.exit(1);
 }
 
-dbmethods.deletegrade('t1113', function(err, result) {
+dbmethods.deleteGrade(student_code, function(err, result) {
     if (err) {
         return handleError(err);
     }
 });
 
-dbmethods.delete('t1113', function(err, result) {
+dbmethods.delete(student_code, function(err, result) {
     if (err) {
         return handleError(err);
     }

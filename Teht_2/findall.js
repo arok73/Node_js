@@ -5,7 +5,7 @@ function handleError(err) {
     process.exit(1);
 }
 
-dbmethods.findall(function(err, result) {
+dbmethods.findAll(function(err, result) {
     if (err) {
         return handleError(err);
     }
