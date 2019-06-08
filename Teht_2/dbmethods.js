@@ -12,19 +12,24 @@ const dbmethods = {
     },
 
     find: function (study_points, callback) {
-        return conn.query('select * from Students where studypoints < ?', [study_points], callback);
+        return conn.query('select * from Students where study_points < ?', [study_points], callback);
+    },
+
+    findall: function (callback) {
+        return conn.query('select * from Students', callback);
     },
 
     update: function (study_points, student_code, callback) {
         return conn.query('update Students set study_points = ? where student_code = ?', [study_points, student_code], callback);
     },
 
-    addgrade: function (grade_id, grade, course_code, student_code, callback) {
-        return conn.query('insert into Grades set grade_id = ?, grade = ?, course_code = ?, student_code = ?', [grade_id, grade, course_code, student_code], callback);
+
+    addgrade: function (grade, course_code, student_code, callback) {
+        return conn.query('insert into Grades set grade = ?, course_code = ?, student_code = ?', [grade, course_code, student_code], callback) ;
     },
 
-    updategrade: function (study_points, student_code, callback) {
-        return conn.query('update Students set study_points = ? where student_code = ?', [study_points, student_code], callback);
+    updategrade: function (grade, student_code, callback) {
+        return conn.query('update Grades set grade = ? where student_code = ?', [grade, student_code], callback);
     },
 
     deletegrade: function (student_code, callback) {

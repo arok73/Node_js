@@ -5,9 +5,9 @@ function handleError(err) {
     process.exit(1);
 }
 
-dbmethods.update('3', 't1113', function (err,result) {
+dbmethods.findall(function(err, result) {
     if (err) {
         return handleError(err);
     }
-    console.log(result.affectedRows + ' records updated' );
+    console.log(result);
 });

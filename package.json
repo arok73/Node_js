@@ -18,5 +18,8 @@
   "homepage": "https://github.com/arok73/Node_js#readme",
   "dependencies": {
     "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0"
   }
 }

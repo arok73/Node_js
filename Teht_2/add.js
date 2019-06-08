@@ -5,7 +5,7 @@ function handleError(err) {
     process.exit(1);
 }
 
-dbmethods.add('t1111', 'Teppo Testaaja', 't1111@testi.fi', 105, function(err, result) {
+dbmethods.add('t1117', 'Elias Keppola', 't1117@testi.fi', 90, function(err, result) {
     if (err) {
         return handleError(err);
     }
