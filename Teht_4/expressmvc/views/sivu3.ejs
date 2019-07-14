@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <p><a href="/sivu1">sivu1</a> | <a href="/sivu2">sivu2</a> | <a href="/logout">logout</a></p>
+    <h1><%= title %></h1>
+    <p>Session id on
+        <%= sessid %>
+    </p>
+    <h1><%= title2 %></h1>
+    <ul>
+        <% for(var i=0; i<list.length; i++) {%>
+           <li><%= list[i].name %> - <%= list[i].email %></li>
+           <ul>
+           <% for(var j=0; j<list[i].grades.length; j++) {%>
+           <li><%= list[i].grades[j].course_code %> - <%= list[i].grades[j].grade %></li>
+           <% } %>
+        </ul>
+        <% } %>
+        </ul>
+        
+</body>
+
+</html>

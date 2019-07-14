@@ -1,0 +1,21 @@
+{
+  "extends": "idiomatic",
+  "rules": {
+      "no-console": "off",
+      "space-unary-ops": "off",
+      "eol-last": "off",
+      "spaced-comment": "off",
+      "func-names": "off",
+      "no-param-reassign": "off",
+      "space-before-function-paren": "off",
+      "indent": ["error", 4],
+      "space-in-parens": "off",
+      "linebreak-style": "off",
+      "one-var": "off",
+      "no-inline-comments": "off",
+      "array-bracket-spacing": "off",
+      "computed-property-spacing": "off",
+      "one-var-declaration-per-line": "off",
+      "strict": "off"
+    }
+}

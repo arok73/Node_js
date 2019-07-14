@@ -1,16 +1,17 @@
 require('./dbconnection');
 const Student = require('./models/Student');
-const Student_code = 't1234';
 
 function handleError(err) {
     console.error(err);
     process.exit(1);
 }
 
-Student.findOneAndRemove({ student_code: 't1234' }, function (err) {
+// kaikkien käyttäjien haku
+Student.find({}, function (err, users) {
     if (err) {
         return handleError(err);
     }
 
-    console.log('Student deleted!');
+    // tulosta kaikki käyttäjät
+    console.log(users);
 });

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+      <h1>Login</h1>
+      <form method="post" action="/">
+        <input type="text" size="40" placeholder="email" name="email"><br />
+        <input type="password" size="40" placeholder="password" name="pass"><br />
+        <input type="submit" value="Submit" id="submit">
+      </form>
+ <% if(errors){ %>
+    <% errors.forEach(function(error) { %>
+        <p><%= error.msg %></p>
+    <% }); %>
+<% } %>
+</body>
+
+</html>

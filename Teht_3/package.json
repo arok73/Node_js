@@ -1,0 +1,29 @@
+{
+  "name": "mongo",
+  "version": "1.0.0",
+  "description": "Node-tehtäviä",
+  "keywords": [
+    "server"
+  ],
+  "author": "tuito",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "contributors": [],
+  "main": "add.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --timeout 3000"
+  },
+  "dependencies": {
+    "mongoose": "^ 5.3.13"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
