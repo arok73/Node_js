@@ -1,6 +1,6 @@
 require('./dbconnection');
 const Student = require('./models/Student');
-const NewStudentObject = require('./NewStudentObject');
+const NewStudentObject = require('./NewTestStudentObject');
 
 const NewStudent = Student(NewStudentObject);
 let start = new Date();

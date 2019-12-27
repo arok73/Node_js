@@ -1,43 +1,43 @@
 {
-  "name": "express_session",
-  "version": "1.0.0",
-  "description": "Node-tehtäviä",
-  "keywords": [
-    "server"
-  ],
-  "author": "tuito",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": ""
-  },
-  "contributors": [],
-  "main": "app.js",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "start": "nodemon ./bin/www",
-    "test": "mocha"
-  },
-  "dependencies": {
-    "body-parser": "*",
-    "cookie-parser": "*",
-    "debug": "*",
-    "ejs": "*",
-    "express": "*",
-    "express-session": "*",
-    "express-validator": "*",
-    "mongoose": "*",
-    "morgan": "*",
-    "serve-favicon": "*"
-  },
-  "devDependencies": {
-    "chai": "*",
-    "chai-http": "*",
-    "mocha": "*",
-    "nodemon": "*",
-    "superagent": "*",
-    "supertest": "*"
-  }
+    "name": "express_session",
+    "version": "1.0.0",
+    "description": "Node-tehtäviä",
+    "keywords": [
+        "server"
+    ],
+    "author": "tuito",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "contributors": [],
+    "main": "app.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "start": "nodemon ./bin/www",
+        "test": "mocha --timeout 10000"
+    },
+    "dependencies": {
+        "body-parser": "*",
+        "cookie-parser": "*",
+        "debug": "*",
+        "ejs": "*",
+        "express": "*",
+        "express-session": "*",
+        "express-validator": "*",
+        "mongoose": "^5.8.1",
+        "morgan": "*",
+        "serve-favicon": "*"
+    },
+    "devDependencies": {
+        "chai": "*",
+        "chai-http": "*",
+        "mocha": "*",
+        "nodemon": "*",
+        "superagent": "^5.1.2",
+        "supertest": "*"
+    }
 }
