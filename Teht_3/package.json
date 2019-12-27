@@ -20,7 +20,7 @@
     "test": "mocha --timeout 3000"
   },
   "dependencies": {
-    "mongoose": "^ 5.3.13"
+    "mongoose": "^ 5.7.5"
   },
   "devDependencies": {
     "chai": "^4.1.2",
